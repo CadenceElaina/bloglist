@@ -1,0 +1,11 @@
+POST http://localhost:3003/api/blogs 
+Content-Type: application/json 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNhZGVuY2VsdXZzdSIsImlkIjoiNjQ0NDExMWU5YmI0NWU2MWQyMzgwOGU1IiwiaWF0IjoxNjgyMjcwMDIxfQ.3GhbbaWye-J00qBW_hpCO1zt9DaQXBIEA5rkH9bls_A
+
+{
+    "title": "A great blog",
+    "author": "Cadence",
+    "url": "https://climate.nasa.gov/",
+    "likes": 1000,
+    "userId": "6444111e9bb45e61d23808e5"
+}
