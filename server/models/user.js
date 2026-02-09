@@ -9,12 +9,24 @@ const userSchema = new mongoose.Schema({
   },
   name: String,
   passwordHash: String,
+  bio: {
+    type: String,
+    default: "",
+  },
+  status: {
+    type: String,
+    default: "",
+  },
   blogs: [
     {
       type: mongoose.Schema.Types.ObjectId,
       ref: "Blog",
     },
   ],
+  createdAt: {
+    type: Date,
+    default: Date.now,
+  },
 });
 
 userSchema.plugin(uniqueValidator);

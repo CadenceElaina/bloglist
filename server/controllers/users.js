@@ -8,9 +8,28 @@ usersRouter.get("/", async (request, response) => {
     author: 1,
     url: 1,
     likes: 1,
+    createdAt: 1,
   });
 
   response.json(users);
+});
+
+usersRouter.put("/:id", async (request, response) => {
+  const { bio, status } = request.body;
+
+  const updatedUser = await User.findByIdAndUpdate(
+    request.params.id,
+    { bio, status },
+    { new: true },
+  ).populate("blogs", {
+    title: 1,
+    author: 1,
+    url: 1,
+    likes: 1,
+    createdAt: 1,
+  });
+
+  updatedUser ? response.json(updatedUser) : response.status(404).end();
 });
 
 usersRouter.post("/", async (request, response) => {

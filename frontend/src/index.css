@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+
+* {
+  font-family: "Noto Sans", sans-serif;
+}
+body {
+  background-color: #333;
+  color: white;
+}
+.error,
+.success {
+  background: lightgrey;
+  font-size: 20px;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.error {
+  color: red;
+}
+
+.header-title,
+.success {
+  color: green;
+}
+#new-blog-btn {
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 1rem;
+}
+.blog {
+  background-color: #fff;
+  color: black;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+/* .notification {
+  margin-top: 10px;
+  margin-bottom: 10px;
+} */
+
+.blog-title {
+  font-size: 1.2rem;
+}
+.table-header {
+  font-size: 1.2rem !important;
+}
+.user {
+  background-color: #fff;
+  border: 1px solid black;
+}
+.blog-details {
+  padding: 1rem;
+}
